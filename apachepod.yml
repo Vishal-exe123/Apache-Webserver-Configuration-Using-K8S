@@ -55,6 +55,6 @@ spec:
       volumes:
       - name: apache-persistent-storage
          hostPath:
-             path: /root/k8stask3 
+             path: /k8stask3 
         persistentVolumeClaim:
           claimName: apache-pv-claim
