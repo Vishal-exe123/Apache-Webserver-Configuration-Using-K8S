@@ -53,8 +53,6 @@ spec:
         - name: apache-persistent-storage
           mountPath: /var/www/html
       volumes:
-      - name: apache-persistent-storage
-        hostPath:
-             path: /k8stask3 
+      - name: apache-persistent-storage 
         persistentVolumeClaim:
           claimName: apache-pv-claim
