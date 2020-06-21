@@ -6,7 +6,7 @@ metadata:
     app: python
 spec:
   ports:
-    - nodePort: 33000
+    - nodePort: 30000
       port: 80
       targetPort: 80
   selector:
@@ -47,7 +47,7 @@ spec:
       - image: vish1234/apache-php-python:v1
         name: python
         ports:
-        - containerPort: 33000
+        - containerPort: 30000
           name: python
         volumeMounts:
         - name: python-persistent-storage
