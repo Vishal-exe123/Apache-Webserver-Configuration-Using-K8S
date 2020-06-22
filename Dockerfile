@@ -16,4 +16,4 @@ COPY  *.py  /vishpy/
 
 RUN  yum  install  /sbin/service  -y
 EXPOSE 80
-CMD  /usr/sbin/httpd  -DEFOREGROUND  &&  /bin/bash  && python3.6 /vishpy/*.py
+CMD  /usr/sbin/httpd  -D FOREGROUND  &&  /bin/bash  && python3.6 /vishpy/*.py
