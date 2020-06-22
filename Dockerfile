@@ -1,4 +1,4 @@
-FROM  centos:latest
+FROM  centos:7
 
 RUN yum install  net-tools  -y
 RUN yum install  sudo  -y
