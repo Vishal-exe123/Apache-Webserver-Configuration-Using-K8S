@@ -7,7 +7,6 @@ RUN yum install  git  -y
 RUN yum install  php  -y
 RUN yum install  python36  -y
 RUN yum install  httpd   -y
-RUN yum install  net-tools  -y
 
 COPY  *.html  /var/www/html/
 
